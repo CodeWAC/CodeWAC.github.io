@@ -1,0 +1,2380 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.11 T887鸡蛋掉落 · 笔记本</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="CodeWAC">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.12.html" />
+    
+    
+    <link rel="prev" href="4.10.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/codewac" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    leetcode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    4月每题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="4.2.html">
+            
+                <a href="4.2.html">
+            
+                    
+                    4.2 生命游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="4.3.html">
+            
+                <a href="4.3.html">
+            
+                    
+                    4.3 T8字符串转换整数(atoi)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="4.4.html">
+            
+                <a href="4.4.html">
+            
+                    
+                    4.4 T42接雨水
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="4.5.html">
+            
+                <a href="4.5.html">
+            
+                    
+                    4.5 T460FLU缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="4.6.html">
+            
+                <a href="4.6.html">
+            
+                    
+                    4.6 T72编辑距离
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="4.7.html">
+            
+                <a href="4.7.html">
+            
+                    
+                    4.7 旋转矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="4.8.html">
+            
+                <a href="4.8.html">
+            
+                    
+                    4.8 面试题13.机器人的运动范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="4.9.html">
+            
+                <a href="4.9.html">
+            
+                    
+                    4.9 T22括号生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="4.10.html">
+            
+                <a href="4.10.html">
+            
+                    
+                    4.10 T151翻转字符串里的单词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.10" data-path="4.11.html">
+            
+                <a href="4.11.html">
+            
+                    
+                    4.11 T887鸡蛋掉落
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="4.12.html">
+            
+                <a href="4.12.html">
+            
+                    
+                    4.12 面试题16.03.交点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="4.13.html">
+            
+                <a href="4.13.html">
+            
+                    
+                    4.13 T355.设计推特
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="4.14.html">
+            
+                <a href="4.14.html">
+            
+                    
+                    4.14 T445.两数相加II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="4.15.html">
+            
+                <a href="4.15.html">
+            
+                    
+                    4.15 T542.01矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.15" data-path="4.16.html">
+            
+                <a href="4.16.html">
+            
+                    
+                    4.16 T56.合并区间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.16" data-path="4.17.html">
+            
+                <a href="4.17.html">
+            
+                    
+                    4.17 T55.跳跃游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.17" data-path="4.18.html">
+            
+                <a href="4.18.html">
+            
+                    
+                    4.18 T11.盛最多水的容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.18" data-path="4.19.html">
+            
+                <a href="4.19.html">
+            
+                    
+                    4.19 T466.统计重复个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.19" data-path="4.20岛屿数量.html">
+            
+                <a href="4.20岛屿数量.html">
+            
+                    
+                    4.20 T200.岛屿数量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.20" data-path="4.21统计优美子数组.html">
+            
+                <a href="4.21统计优美子数组.html">
+            
+                    
+                    4.21 T1248.统计「优美子数组」
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.21" data-path="4.22二叉树的右视图.html">
+            
+                <a href="4.22二叉树的右视图.html">
+            
+                    
+                    4.22 T199.二叉树的右视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.22" data-path="4.23硬币.html">
+            
+                <a href="4.23硬币.html">
+            
+                    
+                    4.23 面试题08.11.硬币
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.23" data-path="4.24数组中的逆序对.html">
+            
+                <a href="4.24数组中的逆序对.html">
+            
+                    
+                    4.24 面试题51.数组中的逆序对
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.24" data-path="4.25全排列.html">
+            
+                <a href="4.25全排列.html">
+            
+                    
+                    4.25 T46.全排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.25" data-path="4.26合并K个排序链表.html">
+            
+                <a href="4.26合并K个排序链表.html">
+            
+                    
+                    4.26 T23.合并K个排序链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.26" data-path="4.27搜索旋转排序数组.html">
+            
+                <a href="4.27搜索旋转排序数组.html">
+            
+                    
+                    4.27 T33.搜索旋转排序数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.27" data-path="4.28数组中数字出现的次数.html">
+            
+                <a href="4.28数组中数字出现的次数.html">
+            
+                    
+                    4.28 面试题56-I.数组中数字出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.28" data-path="4.29山脉数组中查找目标值.html">
+            
+                <a href="4.29山脉数组中查找目标值.html">
+            
+                    
+                    4.29 T1095.山脉数组中查找目标值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.29" data-path="4.30快乐数.html">
+            
+                <a href="4.30快乐数.html">
+            
+                    
+                    4.30 T202.快乐数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../2020_05月/">
+            
+                <a href="../2020_05月/">
+            
+                    
+                    5月每题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../2020_05月/5.01最大子序和.html">
+            
+                <a href="../2020_05月/5.01最大子序和.html">
+            
+                    
+                    5.01 T53.最大子序和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../2020_05月/5.02合并两个有序链表.html">
+            
+                <a href="../2020_05月/5.02合并两个有序链表.html">
+            
+                    
+                    5.02 T21.合并两个有序链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../2020_05月/5.03无重复字符的最长子串.html">
+            
+                <a href="../2020_05月/5.03无重复字符的最长子串.html">
+            
+                    
+                    5.03 T3.无重复字符的最长子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../2020_05月/5.04跳跃游戏II.html">
+            
+                <a href="../2020_05月/5.04跳跃游戏II.html">
+            
+                    
+                    5.04 T45.跳跃游戏II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../2020_05月/5.05验证二叉搜索树.html">
+            
+                <a href="../2020_05月/5.05验证二叉搜索树.html">
+            
+                    
+                    5.05 T98.验证二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../2020_05月/5.06最低票价.html">
+            
+                <a href="../2020_05月/5.06最低票价.html">
+            
+                    
+                    5.06 T983.最低票价
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../2020_05月/5.07另一个树的子树.html">
+            
+                <a href="../2020_05月/5.07另一个树的子树.html">
+            
+                    
+                    5.07 T572.另一个树的子树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../2020_05月/5.08最大正方形.html">
+            
+                <a href="../2020_05月/5.08最大正方形.html">
+            
+                    
+                    5.08 T221.最大正方形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../2020_05月/5.09x的平方根.html">
+            
+                <a href="../2020_05月/5.09x的平方根.html">
+            
+                    
+                    5.09 T69.x的平方根
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../2020_05月/5.10二叉树的最近公共祖先.html">
+            
+                <a href="../2020_05月/5.10二叉树的最近公共祖先.html">
+            
+                    
+                    5.10 T236.二叉树的最近公共祖先
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../2020_05月/5.11Pow.html">
+            
+                <a href="../2020_05月/5.11Pow.html">
+            
+                    
+                    5.11 T50.Pow(x, n)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../2020_05月/5.12最小栈.html">
+            
+                <a href="../2020_05月/5.12最小栈.html">
+            
+                    
+                    5.12 T155.最小栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../2020_05月/5.13二叉树的层序遍历.html">
+            
+                <a href="../2020_05月/5.13二叉树的层序遍历.html">
+            
+                    
+                    5.13 T102.二叉树的层序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="../2020_05月/5.14只出现一次的数字.html">
+            
+                <a href="../2020_05月/5.14只出现一次的数字.html">
+            
+                    
+                    5.14 T136.只出现一次的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="../2020_05月/5.15和为K的子数组.html">
+            
+                <a href="../2020_05月/5.15和为K的子数组.html">
+            
+                    
+                    5.15 T560.和为K的子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="../2020_05月/5.16K个一组翻转链表.html">
+            
+                <a href="../2020_05月/5.16K个一组翻转链表.html">
+            
+                    
+                    5.16 T25.K个一组翻转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="../2020_05月/5.17课程表II.html">
+            
+                <a href="../2020_05月/5.17课程表II.html">
+            
+                    
+                    5.17 T210.课程表II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="../2020_05月/5.18乘积最大子数组.html">
+            
+                <a href="../2020_05月/5.18乘积最大子数组.html">
+            
+                    
+                    5.18 T152.乘积最大子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.19" data-path="../2020_05月/5.19验证回文字符串Ⅱ.html">
+            
+                <a href="../2020_05月/5.19验证回文字符串Ⅱ.html">
+            
+                    
+                    5.19 T680.验证回文字符串Ⅱ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.20" data-path="../2020_05月/5.20每个元音包含偶数次的最长子字符串.html">
+            
+                <a href="../2020_05月/5.20每个元音包含偶数次的最长子字符串.html">
+            
+                    
+                    5.20 T1371.每个元音包含偶数次的最长子字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.21" data-path="../2020_05月/5.21最长回文子串.html">
+            
+                <a href="../2020_05月/5.21最长回文子串.html">
+            
+                    
+                    5.21 T5.最长回文子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.22" data-path="../2020_05月/5.22从前序与中序遍历序列构造二叉树.html">
+            
+                <a href="../2020_05月/5.22从前序与中序遍历序列构造二叉树.html">
+            
+                    
+                    5.22 T105.从前序与中序遍历序列构造二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.23" data-path="../2020_05月/5.23最小覆盖子串.html">
+            
+                <a href="../2020_05月/5.23最小覆盖子串.html">
+            
+                    
+                    5.23 T76.最小覆盖子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.24" data-path="../2020_05月/5.24寻找两个正序数组的中位数.html">
+            
+                <a href="../2020_05月/5.24寻找两个正序数组的中位数.html">
+            
+                    
+                    5.24 T4.寻找两个正序数组的中位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.25" data-path="../2020_05月/5.25LRU缓存机制.html">
+            
+                <a href="../2020_05月/5.25LRU缓存机制.html">
+            
+                    
+                    5.25 T146.LRU缓存机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.26" data-path="../2020_05月/5.26寻找重复数.html">
+            
+                <a href="../2020_05月/5.26寻找重复数.html">
+            
+                    
+                    5.26 T287.寻找重复数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.27" data-path="../2020_05月/5.27和可被K整除的子数组.html">
+            
+                <a href="../2020_05月/5.27和可被K整除的子数组.html">
+            
+                    
+                    5.27 T974.和可被K整除的子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.28" data-path="../2020_05月/5.28字符串解码.html">
+            
+                <a href="../2020_05月/5.28字符串解码.html">
+            
+                    
+                    5.28 T394.字符串解码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.29" data-path="../2020_05月/5.29打家劫舍.html">
+            
+                <a href="../2020_05月/5.29打家劫舍.html">
+            
+                    
+                    5.29 T198.打家劫舍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.30" data-path="../2020_05月/5.30柱状图中最大的矩形.html">
+            
+                <a href="../2020_05月/5.30柱状图中最大的矩形.html">
+            
+                    
+                    5.30 T84.柱状图中最大的矩形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.31" data-path="../2020_05月/5.31对称二叉树.html">
+            
+                <a href="../2020_05月/5.31对称二叉树.html">
+            
+                    
+                    5.31 T101.对称二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../2020_06月/">
+            
+                <a href="../2020_06月/">
+            
+                    
+                    6月每题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../2020_06月/面试题64.求1+2+…+n.html">
+            
+                <a href="../2020_06月/面试题64.求1+2+…+n.html">
+            
+                    
+                    6.02 面试题64.求1+2+…+n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../2020_06月/6.03新21点.html">
+            
+                <a href="../2020_06月/6.03新21点.html">
+            
+                    
+                    6.03 T837.新21点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../2020_06月/6.04除自身以外数组的乘积.html">
+            
+                <a href="../2020_06月/6.04除自身以外数组的乘积.html">
+            
+                    
+                    6.04 T238.除自身以外数组的乘积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../2020_06月/6.05顺时针打印矩阵.html">
+            
+                <a href="../2020_06月/6.05顺时针打印矩阵.html">
+            
+                    
+                    6.05 面试题29.顺时针打印矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../2020_06月/6.06最长连续序列.html">
+            
+                <a href="../2020_06月/6.06最长连续序列.html">
+            
+                    
+                    6.06 T128.最长连续序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../2020_06月/6.07单词接龙II.html">
+            
+                <a href="../2020_06月/6.07单词接龙II.html">
+            
+                    
+                    6.07 T126.单词接龙II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../2020_06月/6.08等式方程的可满足性.html">
+            
+                <a href="../2020_06月/6.08等式方程的可满足性.html">
+            
+                    
+                    6.08 T990.等式方程的可满足性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../2020_06月/6.09把数字翻译成字符串.html">
+            
+                <a href="../2020_06月/6.09把数字翻译成字符串.html">
+            
+                    
+                    6.09 面试题46.把数字翻译成字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../2020_06月/6.10回文数.html">
+            
+                <a href="../2020_06月/6.10回文数.html">
+            
+                    
+                    6.10 T9.回文数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="../2020_06月/6.11每日温度.html">
+            
+                <a href="../2020_06月/6.11每日温度.html">
+            
+                    
+                    6.11 T739.每日温度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="../2020_06月/6.12三数之和.html">
+            
+                <a href="../2020_06月/6.12三数之和.html">
+            
+                    
+                    6.12 T15.三数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="../2020_06月/6.13爬楼梯.html">
+            
+                <a href="../2020_06月/6.13爬楼梯.html">
+            
+                    
+                    6.13 T70.爬楼梯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="../2020_06月/6.14转变数组后最接近目标值的数组和.html">
+            
+                <a href="../2020_06月/6.14转变数组后最接近目标值的数组和.html">
+            
+                    
+                    6.14 T1300.转变数组后最接近目标值的数组和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="../2020_06月/6.15最长公共前缀.html">
+            
+                <a href="../2020_06月/6.15最长公共前缀.html">
+            
+                    
+                    6.15 T14.最长公共前缀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="../2020_06月/6.16二叉树的序列化与反序列化.html">
+            
+                <a href="../2020_06月/6.16二叉树的序列化与反序列化.html">
+            
+                    
+                    6.16 T297.二叉树的序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.16" data-path="../2020_06月/6.17最佳观光组合.html">
+            
+                <a href="../2020_06月/6.17最佳观光组合.html">
+            
+                    
+                    6.17 T1014.最佳观光组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="../2020_06月/6.18从先序遍历还原二叉树.html">
+            
+                <a href="../2020_06月/6.18从先序遍历还原二叉树.html">
+            
+                    
+                    6.18 T1028.从先序遍历还原二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="../2020_06月/6.19验证回文串.html">
+            
+                <a href="../2020_06月/6.19验证回文串.html">
+            
+                    
+                    6.19 T125.验证回文串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="../2020_06月/6.20正则表达式匹配.html">
+            
+                <a href="../2020_06月/6.20正则表达式匹配.html">
+            
+                    
+                    6.20 T10.正则表达式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="../2020_06月/6.21二叉树中的最大路径和.html">
+            
+                <a href="../2020_06月/6.21二叉树中的最大路径和.html">
+            
+                    
+                    6.21 T124.二叉树中的最大路径和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.21" data-path="../2020_06月/6.22面试题模式匹配.html">
+            
+                <a href="../2020_06月/6.22面试题模式匹配.html">
+            
+                    
+                    6.22 面试题16.18.模式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="../2020_06月/6.23二进制求和.html">
+            
+                <a href="../2020_06月/6.23二进制求和.html">
+            
+                    
+                    6.23 T67.二进制求和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="../2020_06月/6.24最接近的三数之和.html">
+            
+                <a href="../2020_06月/6.24最接近的三数之和.html">
+            
+                    
+                    6.24 T16.最接近的三数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.24" data-path="../2020_06月/6.25单词拆分.html">
+            
+                <a href="../2020_06月/6.25单词拆分.html">
+            
+                    
+                    6.25 T139.单词拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.25" data-path="../2020_06月/6.26面试题02.01.移除重复节点.html">
+            
+                <a href="../2020_06月/6.26面试题02.01.移除重复节点.html">
+            
+                    
+                    6.26 面试题02.01.移除重复节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.26" data-path="../2020_06月/6.27缺失的第一个正数.html">
+            
+                <a href="../2020_06月/6.27缺失的第一个正数.html">
+            
+                    
+                    6.27 T41.缺失的第一个正数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.27" data-path="../2020_06月/6.28长度最小的子数组.html">
+            
+                <a href="../2020_06月/6.28长度最小的子数组.html">
+            
+                    
+                    6.28 T209.长度最小的子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.28" data-path="../2020_06月/6.29数组中的第K个最大元素.html">
+            
+                <a href="../2020_06月/6.29数组中的第K个最大元素.html">
+            
+                    
+                    6.29 T215.数组中的第K个最大元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.29" data-path="../2020_06月/6.30剑指Offer09.用两个栈实现队列.html">
+            
+                <a href="../2020_06月/6.30剑指Offer09.用两个栈实现队列.html">
+            
+                    
+                    6.30 剑指Offer09.用两个栈实现队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../2020_07月/">
+            
+                <a href="../2020_07月/">
+            
+                    
+                    7月每题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../2020_07月/7.01最长重复子数组.html">
+            
+                <a href="../2020_07月/7.01最长重复子数组.html">
+            
+                    
+                    7.01 T718.最长重复子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../2020_07月/7.02有序矩阵中第K小的元素.html">
+            
+                <a href="../2020_07月/7.02有序矩阵中第K小的元素.html">
+            
+                    
+                    7.02 T378.有序矩阵中第K小的元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../2020_07月/7.03将有序数组转换为二叉搜索树.html">
+            
+                <a href="../2020_07月/7.03将有序数组转换为二叉搜索树.html">
+            
+                    
+                    7.03 T108.将有序数组转换为二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../2020_07月/7.04最长有效括号.html">
+            
+                <a href="../2020_07月/7.04最长有效括号.html">
+            
+                    
+                    7.04 T32.最长有效括号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../2020_07月/7.05通配符匹配.html">
+            
+                <a href="../2020_07月/7.05通配符匹配.html">
+            
+                    
+                    7.05 T44.通配符匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../2020_07月/7.06不同路径II.html">
+            
+                <a href="../2020_07月/7.06不同路径II.html">
+            
+                    
+                    7.06 T63.不同路径II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../2020_07月/7.07路径总和.html">
+            
+                <a href="../2020_07月/7.07路径总和.html">
+            
+                    
+                    7.07 T112.路径总和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../2020_07月/7.08面试题16.11.跳水板.html">
+            
+                <a href="../2020_07月/7.08面试题16.11.跳水板.html">
+            
+                    
+                    7.08 面试题16.11.跳水板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../2020_07月/7.09面试题17.13.恢复空格.html">
+            
+                <a href="../2020_07月/7.09面试题17.13.恢复空格.html">
+            
+                    
+                    7.09 面试题17.13.恢复空格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../2020_07月/7.10最佳买卖股票时机含冷冻期.html">
+            
+                <a href="../2020_07月/7.10最佳买卖股票时机含冷冻期.html">
+            
+                    
+                    7.10 T309.最佳买卖股票时机含冷冻期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../2020_07月/7.11计算右侧小于当前元素的个数.html">
+            
+                <a href="../2020_07月/7.11计算右侧小于当前元素的个数.html">
+            
+                    
+                    7.11 T315.计算右侧小于当前元素的个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.12" data-path="../2020_07月/7.12地下城游戏.html">
+            
+                <a href="../2020_07月/7.12地下城游戏.html">
+            
+                    
+                    7.12 T174.地下城游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.13" data-path="../2020_07月/7.13两个数组的交集II.html">
+            
+                <a href="../2020_07月/7.13两个数组的交集II.html">
+            
+                    
+                    7.13 T350.两个数组的交集II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.14" data-path="../2020_07月/7.14三角形最小路径和.html">
+            
+                <a href="../2020_07月/7.14三角形最小路径和.html">
+            
+                    
+                    7.14 T120.三角形最小路径和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.15" data-path="../2020_07月/7.15不同的二叉搜索树.html">
+            
+                <a href="../2020_07月/7.15不同的二叉搜索树.html">
+            
+                    
+                    7.15 T96.不同的二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.16" data-path="../2020_07月/7.16判断二分图.html">
+            
+                <a href="../2020_07月/7.16判断二分图.html">
+            
+                    
+                    7.16 T785.判断二分图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.17" data-path="../2020_07月/7.17搜索插入位置.html">
+            
+                <a href="../2020_07月/7.17搜索插入位置.html">
+            
+                    
+                    7.17 T35.搜索插入位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.18" data-path="../2020_07月/7.18交错字符串.html">
+            
+                <a href="../2020_07月/7.18交错字符串.html">
+            
+                    
+                    7.18 T97.交错字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.19" data-path="../2020_07月/7.19戳气球.html">
+            
+                <a href="../2020_07月/7.19戳气球.html">
+            
+                    
+                    7.19 T312.戳气球
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.20" data-path="../2020_07月/7.20两数之和II-输入有序数组.html">
+            
+                <a href="../2020_07月/7.20两数之和II-输入有序数组.html">
+            
+                    
+                    7.20 T167.两数之和II-输入有序数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.21" data-path="../2020_07月/7.21不同的二叉搜索树II.html">
+            
+                <a href="../2020_07月/7.21不同的二叉搜索树II.html">
+            
+                    
+                    7.21 T95.不同的二叉搜索树II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.22" data-path="../2020_07月/7.22剑指Offer11.旋转数组的最小数字.html">
+            
+                <a href="../2020_07月/7.22剑指Offer11.旋转数组的最小数字.html">
+            
+                    
+                    7.22 剑指Offer11.旋转数组的最小数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.23" data-path="../2020_07月/7.23最小路径和.html">
+            
+                <a href="../2020_07月/7.23最小路径和.html">
+            
+                    
+                    7.23 T64.最小路径和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.24" data-path="../2020_07月/7.24除数博弈.html">
+            
+                <a href="../2020_07月/7.24除数博弈.html">
+            
+                    
+                    7.24 T1025.除数博弈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.25" data-path="../2020_07月/7.25分割数组的最大值.html">
+            
+                <a href="../2020_07月/7.25分割数组的最大值.html">
+            
+                    
+                    7.25 T410.分割数组的最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.26" data-path="../2020_07月/7.26矩阵中的最长递增路径.html">
+            
+                <a href="../2020_07月/7.26矩阵中的最长递增路径.html">
+            
+                    
+                    7.26 T329.矩阵中的最长递增路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.27" data-path="../2020_07月/7.27判断子序列.html">
+            
+                <a href="../2020_07月/7.27判断子序列.html">
+            
+                    
+                    7.27 T392.判断子序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.28" data-path="../2020_07月/7.28二叉树的最大深度.html">
+            
+                <a href="../2020_07月/7.28二叉树的最大深度.html">
+            
+                    
+                    7.28 T104.二叉树的最大深度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.29" data-path="../2020_07月/7.29LCP13寻宝.html">
+            
+                <a href="../2020_07月/7.29LCP13寻宝.html">
+            
+                    
+                    7.29 LCP13.寻宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.30" data-path="../2020_07月/7.30整数拆分.html">
+            
+                <a href="../2020_07月/7.30整数拆分.html">
+            
+                    
+                    7.30 T343.整数拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../2020_08月/">
+            
+                <a href="../2020_08月/">
+            
+                    
+                    8月每题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../2020_08月/8.01最小区间.html">
+            
+                <a href="../2020_08月/8.01最小区间.html">
+            
+                    
+                    8.01 T632.最小区间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../2020_08月/8.02二叉树展开为链表.html">
+            
+                <a href="../2020_08月/8.02二叉树展开为链表.html">
+            
+                    
+                    8.02 T114.二叉树展开为链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../2020_08月/8.03字符串相加.html">
+            
+                <a href="../2020_08月/8.03字符串相加.html">
+            
+                    
+                    8.03 T415.字符串相加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../2020_08月/8.04课程表.html">
+            
+                <a href="../2020_08月/8.04课程表.html">
+            
+                    
+                    8.04 T207.课程表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../2020_08月/8.05打家劫舍III.html">
+            
+                <a href="../2020_08月/8.05打家劫舍III.html">
+            
+                    
+                    8.05 T337.打家劫舍III
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../2020_08月/8.06回文对.html">
+            
+                <a href="../2020_08月/8.06回文对.html">
+            
+                    
+                    8.06 T336.回文对
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.7" data-path="../2020_08月/8.07相同的树.html">
+            
+                <a href="../2020_08月/8.07相同的树.html">
+            
+                    
+                    8.07 T100.相同的树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.8" data-path="../2020_08月/8.08恢复二叉搜索树.html">
+            
+                <a href="../2020_08月/8.08恢复二叉搜索树.html">
+            
+                    
+                    8.08 T99.恢复二叉搜索树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.9" data-path="../2020_08月/8.09复原IP地址.html">
+            
+                <a href="../2020_08月/8.09复原IP地址.html">
+            
+                    
+                    8.09 T93.复原IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.10" data-path="../2020_08月/8.10计数二进制子串.html">
+            
+                <a href="../2020_08月/8.10计数二进制子串.html">
+            
+                    
+                    8.10 T696.计数二进制子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.11" data-path="../2020_08月/8.11被围绕的区域.html">
+            
+                <a href="../2020_08月/8.11被围绕的区域.html">
+            
+                    
+                    8.11 T130.被围绕的区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.12" data-path="../2020_08月/8.12克隆图.html">
+            
+                <a href="../2020_08月/8.12克隆图.html">
+            
+                    
+                    8.12 T133.克隆图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../杂记/">
+            
+                <a href="../../杂记/">
+            
+                    
+                    杂记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../杂记/树状数组.html">
+            
+                <a href="../../杂记/树状数组.html">
+            
+                    
+                    树状数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../杂记/python技巧记录.html">
+            
+                <a href="../../杂记/python技巧记录.html">
+            
+                    
+                    python技巧记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../杂记/二进制数枚举子集方法.html">
+            
+                <a href="../../杂记/二进制数枚举子集方法.html">
+            
+                    
+                    二进制枚举子集方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >4.11 T887鸡蛋掉落</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;"><b></b>4.11 T887&#x9E21;&#x86CB;&#x6389;&#x843D;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9898;&#x76EE;"><b></b>&#x9898;&#x76EE;</a></li><li><span class="title-icon "></span><a href="#&#x5206;&#x6790;"><b></b>&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x9898;&#x89E3;1"><b></b>&#x9898;&#x89E3;1</a></li><li><span class="title-icon "></span><a href="#&#x9898;&#x89E3;2"><b></b>&#x9898;&#x89E3;2</a></li><li><span class="title-icon "></span><a href="#&#x9898;&#x89E3;3"><b></b>&#x9898;&#x89E3;3</a></li><li><span class="title-icon "></span><a href="#&#x9898;&#x89E3;4"><b></b>&#x9898;&#x89E3;4</a></li></ul></ul></div><a href="#411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;"><a name="411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;" class="anchor-navigation-ex-anchor" href="#411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;" class="plugin-anchor" href="#411-t887&#x9E21;&#x86CB;&#x6389;&#x843D;"><i class="fa fa-link" aria-hidden="true"></i></a>4.11 T887&#x9E21;&#x86CB;&#x6389;&#x843D;</h1>
+<h2 id="&#x9898;&#x76EE;"><a name="&#x9898;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9898;&#x76EE;" class="plugin-anchor" href="#&#x9898;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9898;&#x76EE;</h2>
+<p>&#x4F60;&#x5C06;&#x83B7;&#x5F97; K &#x4E2A;&#x9E21;&#x86CB;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x680B;&#x4ECE; 1 &#x5230; N  &#x5171;&#x6709; N &#x5C42;&#x697C;&#x7684;&#x5EFA;&#x7B51;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x86CB;&#x7684;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x86CB;&#x788E;&#x4E86;&#xFF0C;&#x4F60;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x628A;&#x5B83;&#x6389;&#x4E0B;&#x53BB;&#x3002;
+&#x4F60;&#x77E5;&#x9053;&#x5B58;&#x5728;&#x697C;&#x5C42; F &#xFF0C;&#x6EE1;&#x8DB3; 0 &lt;= F &lt;= N &#x4EFB;&#x4F55;&#x4ECE;&#x9AD8;&#x4E8E; F &#x7684;&#x697C;&#x5C42;&#x843D;&#x4E0B;&#x7684;&#x9E21;&#x86CB;&#x90FD;&#x4F1A;&#x788E;&#xFF0C;&#x4ECE; F &#x697C;&#x5C42;&#x6216;&#x6BD4;&#x5B83;&#x4F4E;&#x7684;&#x697C;&#x5C42;&#x843D;&#x4E0B;&#x7684;&#x9E21;&#x86CB;&#x90FD;&#x4E0D;&#x4F1A;&#x7834;&#x3002;
+&#x6BCF;&#x6B21;&#x79FB;&#x52A8;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53D6;&#x4E00;&#x4E2A;&#x9E21;&#x86CB;&#xFF08;&#x5982;&#x679C;&#x4F60;&#x6709;&#x5B8C;&#x6574;&#x7684;&#x9E21;&#x86CB;&#xFF09;&#x5E76;&#x628A;&#x5B83;&#x4ECE;&#x4EFB;&#x4E00;&#x697C;&#x5C42; X &#x6254;&#x4E0B;&#xFF08;&#x6EE1;&#x8DB3; 1 &lt;= X &lt;= N&#xFF09;&#x3002;</p>
+<p>&#x4F60;&#x7684;&#x76EE;&#x6807;&#x662F;&#x786E;&#x5207;&#x5730;&#x77E5;&#x9053; F &#x7684;&#x503C;&#x662F;&#x591A;&#x5C11;&#x3002;
+&#x65E0;&#x8BBA; F &#x7684;&#x521D;&#x59CB;&#x503C;&#x5982;&#x4F55;&#xFF0C;&#x4F60;&#x786E;&#x5B9A; F &#x7684;&#x503C;&#x7684;&#x6700;&#x5C0F;&#x79FB;&#x52A8;&#x6B21;&#x6570;&#x662F;&#x591A;&#x5C11;&#xFF1F;</p>
+<p>&#x793A;&#x4F8B; 1&#xFF1A;</p>
+<pre class="language-"><code>&#x8F93;&#x5165;&#xFF1A;K = 1, N = 2
+&#x8F93;&#x51FA;&#xFF1A;2
+&#x89E3;&#x91CA;&#xFF1A;
+&#x9E21;&#x86CB;&#x4ECE; 1 &#x697C;&#x6389;&#x843D;&#x3002;&#x5982;&#x679C;&#x5B83;&#x788E;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x77E5;&#x9053; F = 0 &#x3002;
+&#x5426;&#x5219;&#xFF0C;&#x9E21;&#x86CB;&#x4ECE; 2 &#x697C;&#x6389;&#x843D;&#x3002;&#x5982;&#x679C;&#x5B83;&#x788E;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x77E5;&#x9053; F = 1 &#x3002;
+&#x5982;&#x679C;&#x5B83;&#x6CA1;&#x788E;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x77E5;&#x9053; F = 2 &#x3002;
+&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x6700;&#x574F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x79FB;&#x52A8; 2 &#x6B21;&#x4EE5;&#x786E;&#x5B9A; F &#x662F;&#x591A;&#x5C11;&#x3002;
+</code></pre><p>&#x793A;&#x4F8B; 2&#xFF1A;</p>
+<pre class="language-"><code>&#x8F93;&#x5165;&#xFF1A;K = 2, N = 6
+&#x8F93;&#x51FA;&#xFF1A;3
+</code></pre><p>&#x793A;&#x4F8B; 3&#xFF1A;</p>
+<pre class="language-"><code>&#x8F93;&#x5165;&#xFF1A;K = 3, N = 14
+&#x8F93;&#x51FA;&#xFF1A;4
+</code></pre><p>&#x63D0;&#x793A;&#xFF1A;</p>
+<ul>
+<li>1 &lt;= K &lt;= 100</li>
+<li>1 &lt;= N &lt;= 10000</li>
+</ul>
+<p>&#x6765;&#x6E90;&#xFF1A;&#x529B;&#x6263;&#xFF08;LeetCode&#xFF09;
+&#x94FE;&#x63A5;&#xFF1A;<a href="https://leetcode-cn.com/problems/super-egg-drop" target="_blank">https://leetcode-cn.com/problems/super-egg-drop</a>
+&#x8457;&#x4F5C;&#x6743;&#x5F52;&#x9886;&#x6263;&#x7F51;&#x7EDC;&#x6240;&#x6709;&#x3002;&#x5546;&#x4E1A;&#x8F6C;&#x8F7D;&#x8BF7;&#x8054;&#x7CFB;&#x5B98;&#x65B9;&#x6388;&#x6743;&#xFF0C;&#x975E;&#x5546;&#x4E1A;&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;&#x3002;</p>
+<hr>
+<h2 id="&#x5206;&#x6790;"><a name="&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5206;&#x6790;" class="plugin-anchor" href="#&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x6790;</h2>
+<p>&#x9898;&#x76EE;&#x610F;&#x601D;&#x662F;<strong>&#x65E0;&#x8BBA;F&#x7684;&#x521D;&#x59CB;&#x503C;&#x5982;&#x4F55;&#xFF0C;&#x4F60;&#x786E;&#x5B9A;F&#x7684;&#x503C;&#x7684;&#x6700;&#x5C0F;&#x79FB;&#x52A8;&#x6B21;&#x6570;&#x662F;&#x591A;&#x5C11;&#xFF1F;</strong></p>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x77E5;&#xFF0C;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;F&#x503C;&#xFF0C;&#x6700;&#x540E;&#x6254;&#x9E21;&#x86CB;&#x7684;&#x6B21;&#x6570;&#x90FD;&#x4E0D;&#x540C;&#x3002;
+&#x8BBE;&#x7B56;&#x7565;&#x96C6;&#x5408;&#x4E3A;$A$&#xFF0C;F&#x53D6;&#x503C;&#x96C6;&#x5408;&#x4E3A;$B$&#xFF0C;$X_{ab}$&#x8868;&#x793A;&#x7B56;&#x7565;$a$&#x5728;F&#x7B49;&#x4E8E;$b$&#x65F6;&#x7684;&#x6254;&#x9E21;&#x86CB;&#x6B21;&#x6570;&#xFF0C;&#x5176;&#x4E2D;$a \in A$&#xFF0C;$b \in B$&#x3002;</p>
+<p>&#x5219;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;<strong>&#x56FA;&#x5B9A;</strong>F&#x503C;&#x4E3A;$b<em>0 \in B$&#xFF0C;&#x627E;&#x5230;&#x6240;&#x6709;&#x4E0D;&#x540C;&#x7B56;&#x7565;&#x6240;&#x9700;&#x7684;&#x6B21;&#x6570;&#x6700;&#x5927;&#x503C;$Y</em>{b<em>0} = max</em>{a \in A}(X<em>{ab_0})$&#xFF0C;&#x5373;&#x6700;&#x574F;&#x7B56;&#x7565;&#x8981;&#x591A;&#x5C11;&#x6B21;&#x6D4B;&#x51FA;F&#x3002;
+&#x518D;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;F&#x503C;$b \in B$&#xFF0C;&#x53D6;&#x6240;&#x6709;&#x7684;$Y</em>{b}$&#x7684;&#x6700;&#x5C0F;&#x503C;&#x5373;&#x4E3A;&#x7ED3;&#x679C;$res = min<em>{b \in B}Y</em>{b}$&#x3002;</p>
+<hr>
+<h2 id="&#x9898;&#x89E3;1"><a name="&#x9898;&#x89E3;1" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x89E3;1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9898;&#x89E3;1" class="plugin-anchor" href="#&#x9898;&#x89E3;1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9898;&#x89E3;1</h2>
+<p>&#x57FA;&#x672C;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x3002;&#x5B9A;&#x4E49;&#x72B6;&#x6001;dp(k, n)&#x8868;&#x793A;&#x6709;k&#x4E2A;&#x9E21;&#x86CB;&#xFF0C;n&#x5C42;&#x697C;&#xFF0C;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x6254;&#x9E21;&#x86CB;&#x7684;&#x6B21;&#x6570;(&#x5373;&#x7ED3;&#x679C;)&#x3002;</p>
+<p>&#x91C7;&#x7528;&#x7531;&#x9876;&#x5411;&#x4E0B;&#x7684;&#x5907;&#x5FD8;&#x5F55;&#x5F0F;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x3002;&#x5BF9;&#x4E8E;k&#x4E2A;&#x9E21;&#x86CB;n&#x5C42;&#x697C;&#xFF0C;&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7B2C;$i$&#x5C42;&#x6254;&#x51FA;&#xFF0C;$i \in {1,2,\dots,n}$&#x3002;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;$i$&#x5C42;&#x6254;&#x51FA;&#xFF0C;&#x9E21;&#x86CB;&#x788E;&#xFF0C;&#x8BF4;&#x660E;F &lt; $i$&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#x6D4B;&#x8BD5;&#x697C;&#x4E0B;&#x9700;&#x8981;dp(k-1, i-1)&#x6B21;</li>
+<li>&#x7B2C;$i$&#x5C42;&#x6254;&#x51FA;&#xFF0C;&#x9E21;&#x86CB;&#x6CA1;&#x788E;&#xFF0C;&#x8BF4;&#x660E;F &gt;= $i$&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#x6D4B;&#x8BD5;&#x697C;&#x4E0A;&#x9700;&#x8981;dp(k, n-i)&#x6B21;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x672C;&#x6B21;&#x7B56;&#x7565;(&#x4ECE;&#x7B2C;i&#x5C42;&#x6254;&#x51FA;&#x9E21;&#x86CB;)&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x4E0B;&#x6254;&#x9E21;&#x86CB;&#x6B21;&#x6570;&#xFF1A;
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mi>m</mi><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>(</mo><mi>d</mi><mi>p</mi><mo>(</mo><mi>k</mi><mo>&#x2212;</mo><mn>1</mn><mo separator="true">,</mo><mi>i</mi><mo>&#x2212;</mo><mn>1</mn><mo>)</mo><mo separator="true">,</mo><mi>d</mi><mi>p</mi><mo>(</mo><mi>k</mi><mo separator="true">,</mo><mi>n</mi><mo>&#x2212;</mo><mi>i</mi><mo>)</mo><mo>)</mo><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mspace width="1em"></mspace><mi>i</mi><mo>&#x2208;</mo><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex"> tmp_i = max( dp(k-1, i-1), dp(k, n-i) ) + 1, \quad i \in {1,2,...,n} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span><span class="mord mathit">m</span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mrel">=</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mopen">(</span><span class="mord mathit">d</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathit">i</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mord mathit">d</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathit"><span class="mspace quad"></span><span class="mord mathit">i</span></span><span class="mrel">&#x2208;</span><span class="mord textstyle uncramped"><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathrm">2</span><span class="mpunct">,</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mpunct">,</span><span class="mord mathit">n</span></span></span></span></span>
+$tmp_i$&#x8868;&#x793A;&#x5BF9;&#x4E8E;k&#x4E2A;&#x9E21;&#x86CB;n&#x5C42;&#x697C;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#x4ECE;&#x7B2C;i&#x5C42;&#x6254;&#x51FA;&#x9E21;&#x86CB;&#xFF0C;&#x6D4B;&#x51FA;F&#x9700;&#x8981;&#x7684;&#x6700;&#x591A;&#x6B21;&#x6570;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x60C5;&#x51B5;&#xFF0C;&#x6700;&#x7EC8;&#x7ED3;&#x679C;$dp(k, n)$&#xFF0C;&#x5C31;&#x5E94;&#x8BE5;&#x4E3A;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;$i \in {1,2,...,n}$ &#x6C42;&#x5F97;&#x4E00;&#x4E2A;$tmp_i$&#xFF0C;&#x518D;&#x53D6;&#x6240;&#x6709;$tmp_i$&#x7684;&#x6700;&#x5C0F;&#x503C;&#x3002;&#x5373;&#xFF1A;
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mi>e</mi><mi>s</mi><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo>(</mo><mi>t</mi><mi>m</mi><msub><mi>p</mi><mi>i</mi></msub><mo>)</mo><mspace width="1em"></mspace><mi>f</mi><mi>o</mi><mi>r</mi><mtext>&#xA0;</mtext><mi>a</mi><mi>l</mi><mi>l</mi><mtext>&#xA0;</mtext><mi>i</mi><mo>&#x2208;</mo><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex"> res = min(tmp_i) \quad for \ all \ i \in {1,2,...,n} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mrel">=</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mopen">(</span><span class="mord mathit">t</span><span class="mord mathit">m</span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span><span class="mord mathit"><span class="mspace quad"></span><span class="mord mathit" style="margin-right:0.10764em;">f</span></span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit"><span class="mspace">&#xA0;</span><span class="mord mathit">a</span></span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit"><span class="mspace">&#xA0;</span><span class="mord mathit">i</span></span><span class="mrel">&#x2208;</span><span class="mord textstyle uncramped"><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathrm">2</span><span class="mpunct">,</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mpunct">,</span><span class="mord mathit">n</span></span></span></span></span></p>
+<p>&#x8F6C;&#x6362;&#x4E00;&#x4E0B;&#x8868;&#x8FF0;&#x5373;&#xFF1A;
+&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF1A;</p>
+<ul>
+<li>k=1&#x65F6;&#xFF0C;dp(1, n)&#x8FD4;&#x56DE;n</li>
+<li>n=0&#x65F6;&#xFF0C;dp(k, 0)&#x8FD4;&#x56DE;0</li>
+</ul>
+<p>&#x72B6;&#x6001;&#x8F6C;&#x79FB;
+dp(k, n) = min( max( dp(k-1, i-1), dp(k, n-i) ) ) + 1 , for i in range(1, n+1)</p>
+<p>python3&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">superEggDrop</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> K<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> N<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        <span class="token comment"># &#x5907;&#x5FD8;&#x5F55;</span>
+        meno <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+        <span class="token keyword">def</span> <span class="token function">dp</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># k&#x4E2A;&#x9E21;&#x86CB;n&#x5C42;&#x697C;&#xFF0C;&#x6700;&#x5C11;&#x6254;&#x9E21;&#x86CB;&#x7684;&#x6B21;&#x6570;</span>
+            <span class="token keyword">if</span> k<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">:</span> <span class="token keyword">return</span> n
+            <span class="token keyword">if</span> n<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">return</span> <span class="token number">0</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token keyword">in</span> meno<span class="token punctuation">:</span> <span class="token keyword">return</span> meno<span class="token punctuation">[</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+            res <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;INF&apos;</span><span class="token punctuation">)</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                res <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>
+                    res<span class="token punctuation">,</span>
+                    <span class="token builtin">max</span><span class="token punctuation">(</span>
+                        dp<span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment"># &#x5728;&#x7B2C;i&#x5C42;&#x6254;&#x9E21;&#x86CB;&#xFF0C;&#x6CA1;&#x788E;&#x3002;&#x6D4B;&#x8BD5;&#x697C;&#x4E0A;n-i&#x5C42;</span>
+                        dp<span class="token punctuation">(</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># &#x5728;&#x7B2C;i&#x5C42;&#x6254;&#x9E21;&#x86CB;&#xFF0C;&#x788E;&#x4E86;&#x3002;&#x6D4B;&#x8BD5;&#x697C;&#x4E0B;i-1&#x5C42;</span>
+                    <span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment"># &#x53D6;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x6700;&#x574F;&#x503C;&#xFF0C;&#x518D;&#x52A0;&#x6254;&#x7B2C;i&#x5C42;&#x7684;&#x4E00;&#x6B21;</span>
+                <span class="token punctuation">)</span> <span class="token comment"># &#x904D;&#x5386;&#x5F53;&#x524D;&#x7684;&#x6BCF;&#x4E2A;&#x697C;&#x5C42;&#xFF0C;&#x53BB;&#x6700;&#x597D;&#x7684;&#x4E00;&#x4E2A;</span>
+
+            meno<span class="token punctuation">[</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> res
+            <span class="token keyword">return</span> res
+        <span class="token keyword">return</span> dp<span class="token punctuation">(</span>K<span class="token punctuation">,</span> N<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;$O(K<em>N^2)$&#xFF0C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;$O(K </em> N)$&#x3002;&#x5B50;&#x95EE;&#x9898;&#x4E2A;&#x6570;&#x5373;&#x72B6;&#x6001;&#x4E2A;&#x6570;&#x5171;$K * N$&#x4E2A;&#xFF0C;&#x6BCF;&#x4E2A;&#x72B6;&#x6001;&#x91CC;&#x7ECF;&#x8FC7;&#x4E00;&#x6B21;&#x904D;&#x5386;$N$&#x6B21;&#x3002;</p>
+<hr>
+<h2 id="&#x9898;&#x89E3;2"><a name="&#x9898;&#x89E3;2" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x89E3;2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9898;&#x89E3;2" class="plugin-anchor" href="#&#x9898;&#x89E3;2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9898;&#x89E3;2</h2>
+<p>&#x5BF9;&#x9898;&#x89E3;1&#x8FDB;&#x884C;&#x6539;&#x8FDB;&#xFF0C;&#x56E0;&#x4E3A;<code>dp(k, n)</code>&#x968F;&#x7740;n&#x589E;&#x5927;&#x9012;&#x589E;&#xFF0C;
+&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;<strong>&#x56FA;&#x5B9A;&#x7684;k&#xFF0C;n</strong>&#xFF0C;&#x968F;&#x7740;i&#x7684;&#x589E;&#x5927;&#xFF0C;<code>dp(k, n-i)</code>&#x9012;&#x51CF;&#xFF0C;<code>dp(k-1, i-1)</code>&#x9012;&#x589E;&#x3002;
+&#x4E14;i==1&#x65F6;&#xFF0C;<code>dp(k-1, i-1)=dp(k-1, 0)=0</code>&#xFF0C;&#x6240;&#x4EE5;<code>dp(k-1, i-1)&lt;=dp(k, n-i)</code>&#xFF0C;
+&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x5230;<code>dp(k, n) = min( max( dp(k-1, i-1), dp(k, n-i) ) )</code></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">superEggDrop</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> K<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> N<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&apos;&apos;&apos;
+        &#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(K * N * logN)
+        &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(K * N)
+        &apos;&apos;&apos;</span>
+        meno <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+        <span class="token keyword">def</span> <span class="token function">dp</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># k&#x4E2A;&#x9E21;&#x86CB;n&#x5C42;&#x697C;&#xFF0C;&#x6700;&#x5C11;&#x6254;&#x9E21;&#x86CB;&#x7684;&#x6B21;&#x6570;</span>
+            <span class="token keyword">if</span> k <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span> <span class="token keyword">return</span> n
+            <span class="token keyword">if</span> n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">return</span> <span class="token number">0</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token keyword">in</span> meno<span class="token punctuation">:</span> <span class="token keyword">return</span> meno<span class="token punctuation">[</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+            le<span class="token punctuation">,</span> ri <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> n
+            res <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;INF&apos;</span><span class="token punctuation">)</span>
+            <span class="token keyword">while</span> le <span class="token operator">&lt;=</span> ri<span class="token punctuation">:</span>
+                mid <span class="token operator">=</span> <span class="token punctuation">(</span>le <span class="token operator">+</span> ri<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
+                broken <span class="token operator">=</span> dp<span class="token punctuation">(</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> mid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># &#x5728;&#x7B2C;mid&#x5C42;&#x6254;&#x9E21;&#x86CB;&#xFF0C;&#x788E;&#x4E86;</span>
+                no_broken <span class="token operator">=</span> dp<span class="token punctuation">(</span>k<span class="token punctuation">,</span> n <span class="token operator">-</span> mid<span class="token punctuation">)</span> <span class="token comment"># &#x5728;&#x7B2C;mid&#x5C42;&#x6254;&#x9E21;&#x86CB;&#xFF0C;&#x6CA1;&#x788E;</span>
+                <span class="token keyword">if</span> broken <span class="token operator">&gt;</span> no_broken<span class="token punctuation">:</span>
+                    res <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> broken <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                    ri <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    res <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> no_broken <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                    le <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
+
+            meno<span class="token punctuation">[</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> res
+            <span class="token keyword">return</span> res
+
+        <span class="token keyword">return</span> dp<span class="token punctuation">(</span>K<span class="token punctuation">,</span> N<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;$O(K <em> N </em> logN)$&#xFF0C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;$O(K * N)$&#x3002;&#x56E0;&#x4E3A;&#x628A;&#x7EBF;&#x6027;&#x67E5;&#x627E;&#x53D8;&#x4E3A;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x3002;</p>
+<h2 id="&#x9898;&#x89E3;3"><a name="&#x9898;&#x89E3;3" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x89E3;3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9898;&#x89E3;3" class="plugin-anchor" href="#&#x9898;&#x89E3;3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9898;&#x89E3;3</h2>
+<p>&#x5BF9;&#x65B9;&#x6CD5;&#x4E8C;&#x7684;&#x6539;&#x8FDB;&#xFF0C;&#x672C;&#x65B9;&#x6CD5;&#x53C2;&#x8003;<a href="https://leetcode-cn.com/problems/super-egg-drop/solution/ji-dan-diao-luo-by-leetcode-solution/" target="_blank">leetcode&#x9898;&#x89E3;</a>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>p</mi><mo>(</mo><mi>k</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>=</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mrow><mi>i</mi><mo>&#x2208;</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>n</mi></mrow></msub><mo>(</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>(</mo><mi>d</mi><mi>p</mi><mo>(</mo><mi>k</mi><mo>&#x2212;</mo><mn>1</mn><mo separator="true">,</mo><mi>i</mi><mo>&#x2212;</mo><mn>1</mn><mo>)</mo><mo separator="true">,</mo><mi>d</mi><mi>p</mi><mo>(</mo><mi>k</mi><mo separator="true">,</mo><mi>n</mi><mo>&#x2212;</mo><mi>i</mi><mo>)</mo><mo>)</mo><mo>+</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">dp(k, n) = min_{i \in 1,2,...,n}( max( dp(k-1, i-1), dp(k, n-i) ) + 1 )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord mathit">d</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">&#x2208;</span><span class="mord mathrm mtight">1</span><span class="mpunct mtight">,</span><span class="mord mathrm mtight">2</span><span class="mpunct mtight">,</span><span class="mord mathrm mtight">.</span><span class="mord mathrm mtight">.</span><span class="mord mathrm mtight">.</span><span class="mpunct mtight">,</span><span class="mord mathit mtight">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen">(</span><span class="mord mathit">m</span><span class="mord mathit">a</span><span class="mord mathit">x</span><span class="mopen">(</span><span class="mord mathit">d</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathit">i</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mord mathit">d</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathrm">1</span><span class="mclose">)</span></span></span></span>
+$x = argmin_{x \in 1,2,...,n}[ max( dp(k-1, x-1), dp(k, n-x) ) ]$
+&#x57FA;&#x672C;&#x601D;&#x8DEF;&#xFF1A;dp(k, n)&#x5173;&#x4E8E;n&#x662F;&#x9012;&#x589E;&#x7684;&#x3002;&#x5219;&#x968F;&#x7740;n&#x9012;&#x589E;&#xFF0C;dp(k-1, i-1)&#x548C;dp(k, n-i)&#x7684;&#x4EA4;&#x70B9;x&#x9010;&#x6E10;&#x53D8;&#x5927;&#xFF0C;
+&#x6240;&#x4EE5;&#x56FA;&#x5B9A;k&#xFF0C;&#x9012;&#x589E;n&#xFF0C;x&#x4E5F;&#x9012;&#x589E;&#x3002;
+&#x53EA;&#x9700;&#x4E00;&#x6B21;&#x904D;&#x5386;&#x5C31;&#x53EF;&#x5F97;&#x5230;&#x6240;&#x6709;&#x7684;dp(k, i)&#xFF0C;&#x5176;&#x4E2D;i in {1,2...,n}&#xFF0C;k&#x56FA;&#x5B9A;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">superEggDrop</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> K<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> N<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&apos;&apos;&apos;
+        &#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(K * N)
+        &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(N)
+        &apos;&apos;&apos;</span>
+        <span class="token comment"># Right now, dp[i] represents dp(1, i)</span>
+        dp <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span>N <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># &#x5B58;&#x50A8;dp(k-1, i) i \in {1,2...,N}</span>
+        dp2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>N <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># &#x5B58;&#x50A8;dp(k, i) i \in {1,2...,N}</span>
+        <span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> K <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># Now, we will develop dp2[i] = dp(k, i)</span>
+            x <span class="token operator">=</span> <span class="token number">1</span>
+            <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> N <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># Let&apos;s find dp2[n] = dp(k, n)</span>
+                <span class="token comment"># Increase our optimal x while we can make our answer better.</span>
+                <span class="token comment"># Notice max(dp[x-1], dp2[n-x]) &gt; max(dp[x], dp2[n-x-1])</span>
+                <span class="token comment"># is simply max(T1(x-1), T2(x-1)) &gt; max(T1(x), T2(x)).</span>
+                <span class="token keyword">while</span> x <span class="token operator">&lt;</span> n <span class="token keyword">and</span> <span class="token builtin">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>x <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dp2<span class="token punctuation">[</span>n <span class="token operator">-</span> x<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">,</span> dp2<span class="token punctuation">[</span>n <span class="token operator">-</span> x <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    x <span class="token operator">+=</span> <span class="token number">1</span> <span class="token comment"># &#x56E0;&#x4E3A;&#x4EA4;&#x70B9;x&#x89E3;&#x9012;&#x589E;&#xFF0C;&#x6240;&#x4EE5;&#x5728;n&#x5FAA;&#x73AF;&#x5185;&#xFF0C;x&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E0A;&#x6B21;n-1&#x7684;&#x89E3;&#x4F5C;&#x4E3A;&#x521D;&#x503C;&#x9012;&#x589E;&#x5373;&#x53EF;&#xFF0C;&#x4E0D;&#x7528;&#x91CD;&#x7F6E;&#x4E3A;1</span>
+
+                <span class="token comment"># The final answer happens at this x.</span>
+                dp2<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token builtin">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>x <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dp2<span class="token punctuation">[</span>n <span class="token operator">-</span> x<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+            dp <span class="token operator">=</span> dp2<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+        <span class="token comment"># &#x4F5C;&#x8005;&#xFF1A;LeetCode - Solution</span>
+        <span class="token comment"># &#x94FE;&#x63A5;&#xFF1A;https: // leetcode - cn.com / problems / super - egg - drop / solution / ji - dan - diao - luo - by - leetcode - solution /</span>
+        <span class="token comment"># &#x6765;&#x6E90;&#xFF1A;&#x529B;&#x6263;&#xFF08;LeetCode&#xFF09;</span>
+        <span class="token comment"># &#x8457;&#x4F5C;&#x6743;&#x5F52;&#x4F5C;&#x8005;&#x6240;&#x6709;&#x3002;&#x5546;&#x4E1A;&#x8F6C;&#x8F7D;&#x8BF7;&#x8054;&#x7CFB;&#x4F5C;&#x8005;&#x83B7;&#x5F97;&#x6388;&#x6743;&#xFF0C;&#x975E;&#x5546;&#x4E1A;&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;&#x3002;</span>
+</code></pre>
+<h2 id="&#x9898;&#x89E3;4"><a name="&#x9898;&#x89E3;4" class="anchor-navigation-ex-anchor" href="#&#x9898;&#x89E3;4"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9898;&#x89E3;4" class="plugin-anchor" href="#&#x9898;&#x89E3;4"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9898;&#x89E3;4</h2>
+<p>&#x5168;&#x65B0;&#x65B9;&#x6CD5;&#xFF0C;&#x5B9A;&#x4E49;&#x4E0D;&#x540C;&#x7684;&#x72B6;&#x6001;
+<code>dp[k][m]</code>&#x8868;&#x793A;k&#x4E2A;&#x9E21;&#x86CB;&#xFF0C;&#x6254;m&#x6B21;&#xFF0C;&#x81F3;&#x5C11;&#x53EF;&#x4EE5;&#x6D4B;&#x51FA;&#x591A;&#x5C11;&#x5C42;&#x697C;&#x3002;</p>
+<p>&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#xFF1A;<code>dp[k][m] = dp[k-1][m-1] + 1 + dp[k][m-1]</code></p>
+<ul>
+<li><code>dp[k-1][m-1]</code>--&#x697C;&#x4E0B;</li>
+<li><code>1</code>--&#x672C;&#x5C42;    </li>
+<li><code>dp[k][m-1]</code>--&#x697C;&#x4E0A;</li>
+</ul>
+<pre class="language-"><code class="lang-python">    <span class="token keyword">def</span> <span class="token function">superEggDrop_4</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> K<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> N<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&apos;&apos;&apos;
+        &#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(K * N)
+        &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(K * N)
+        &apos;&apos;&apos;</span>
+        dp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">(</span>N<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token comment"># for i in range(1, N+1):</span>
+        <span class="token comment">#     for j in range(1, K+1):</span>
+        <span class="token comment">#         dp[j][i] = dp[j-1][i-1] + 1 + dp[j][i-1]</span>
+        <span class="token comment">#     if dp[K][i] &gt;= N:</span>
+        <span class="token comment">#         return i</span>
+
+        m <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">while</span> dp<span class="token punctuation">[</span>K<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token punctuation">]</span><span class="token operator">&lt;</span>N<span class="token punctuation">:</span>
+            m <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+        <span class="token keyword">return</span> m
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="https://codewac.github.io" target="_blank">CodeWAC</a> 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-04-12 15:33:45
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.10.html" class="navigation navigation-prev " aria-label="Previous page: 4.10 T151翻转字符串里的单词">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.12.html" class="navigation navigation-next " aria-label="Next page: 4.12 面试题16.03.交点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.11 T887鸡蛋掉落","level":"1.2.1.10","depth":3,"next":{"title":"4.12 面试题16.03.交点","level":"1.2.1.11","depth":3,"path":"leetcode/2020_04月/4.12.md","ref":"leetcode/2020_04月/4.12.md","articles":[]},"previous":{"title":"4.10 T151翻转字符串里的单词","level":"1.2.1.9","depth":3,"path":"leetcode/2020_04月/4.10.md","ref":"leetcode/2020_04月/4.10.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","katex","yahei","github","autotheme","-lunr","-search","search-plus","prism","-highlight","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","book-summary-scroll-position-saver","donate","anchors","anchor-navigation-ex","sitemap-general","copy-code-button","multipart"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://codewac.github.io' target='_blank'>CodeWAC</a> 2020","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/codewac"},"yahei":{},"book-summary-scroll-position-saver":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"donate":{"alipay":"/assets/alipay.jpeg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"/assets/weixin.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://codewac.github.io"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"/assets/images/favicon.ico","bookmark":"/assets/images/favicon.ico","appleTouch":"/assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"/assets/images/apple-touch-icon-120x120.png","180x180":"/assets/images/apple-touch-icon-180x180.png"}},"expandable-chapters-small":{},"copy-code-button":{},"autotheme":{"night":[20,21,22,23,0,1,2,3,4,5],"sepia":[6,7,8,18,19,19],"white":[9,10,11,12,13,14,15,16,17]},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"CodeWAC","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记本","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/codewac"}},"gitbook":"3.x.x","description":"随心所记，以免忘记"},"file":{"path":"leetcode/2020_04月/4.11.md","mtime":"2020-04-12T07:33:45.156Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-06T13:07:53.756Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-autotheme/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
